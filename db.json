@@ -3,5 +3,37 @@
     "id": 1,
     "name": "test user",
     "email": "test@test.com"
-  }
+  },
+  "contacts": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@test.com"
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "email": "mary@test.com"
+    },
+    {
+      "id": 3,
+      "name": "Nick",
+      "email": "nick@test.com"
+    },
+    {
+      "id": 4,
+      "name": "David",
+      "email": "david@test.com"
+    },
+    {
+      "id": 5,
+      "name": "Elton",
+      "email": "elton@test.com"
+    },
+    {
+      "id": 6,
+      "name": "Inna",
+      "email": "inna@test.com"
+    }
+  ]
 }
