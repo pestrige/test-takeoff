@@ -1,20 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Route, useHistory } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getIsAuth } from '../../../store/selector';
 import { AppRoute } from '../../../const';
 
 export default function PrivateRoute(props) {
   const { exact, path, render } = props;
-  const history = useHistory();
   const isAuth = useSelector(getIsAuth);
 
   return (
     <Route
       exact={exact}
       path={path}
-      render={(routeProps) => isAuth ? render(routeProps) : history.push(AppRoute.ROOT)}
+      render={(routeProps) => (
+        isAuth
+          ? render(routeProps)
+          : <Redirect to={AppRoute.ROOT} />
+      )}
     />
   );
 }
