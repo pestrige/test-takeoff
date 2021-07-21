@@ -26,7 +26,7 @@ export default function Form() {
 
   const handleSubmit = (evt) => {
     const email = emailRef.current.querySelector('input').value;
-    const password = passwordRef.current.querySelector('input')?.value;
+    const password = passwordRef.current.querySelector('input').value;
     evt.preventDefault();
     if (!password) {
       setIsPasswordError(true);
@@ -41,7 +41,8 @@ export default function Form() {
   return (
     <form
       className={classes.form}
-      noValidate autoComplete='off'
+      noValidate
+      autoComplete='off'
       onSubmit={handleSubmit}
     >
       <FormControl>
