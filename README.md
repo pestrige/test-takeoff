@@ -6,7 +6,7 @@
 
 ---
 
-Опубликованная версия доступна по ссылке - https://test-takeoff.herokuapp.com/
+Опубликованная версия доступна по ссылке - https://test-takeoff.dimkey.dev
 
 ---
 
