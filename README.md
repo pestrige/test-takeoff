@@ -32,7 +32,7 @@
 ### Инструкции:
 1. Клонируйте репозиторий на локальную машину:
 ~~~
-git clone git@github.com:pestrige/schedule-calculator.git
+git clone git@github.com:pestrige/test-takeoff.git
 ~~~
 2. Перейдите в папку проекта:
 ~~~
